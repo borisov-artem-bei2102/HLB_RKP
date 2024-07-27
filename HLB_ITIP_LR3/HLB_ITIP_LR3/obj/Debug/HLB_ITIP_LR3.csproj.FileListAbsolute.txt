@@ -1,7 +1,0 @@
-C:\Users\puppup\source\repos\HLB_ITIP_LR3\HLB_ITIP_LR3\bin\Debug\HLB_ITIP_LR3.exe.config
-C:\Users\puppup\source\repos\HLB_ITIP_LR3\HLB_ITIP_LR3\bin\Debug\HLB_ITIP_LR3.exe
-C:\Users\puppup\source\repos\HLB_ITIP_LR3\HLB_ITIP_LR3\bin\Debug\HLB_ITIP_LR3.pdb
-C:\Users\puppup\source\repos\HLB_ITIP_LR3\HLB_ITIP_LR3\obj\Debug\HLB_ITIP_LR3.csproj.AssemblyReference.cache
-C:\Users\puppup\source\repos\HLB_ITIP_LR3\HLB_ITIP_LR3\obj\Debug\HLB_ITIP_LR3.csproj.CoreCompileInputs.cache
-C:\Users\puppup\source\repos\HLB_ITIP_LR3\HLB_ITIP_LR3\obj\Debug\HLB_ITIP_LR3.exe
-C:\Users\puppup\source\repos\HLB_ITIP_LR3\HLB_ITIP_LR3\obj\Debug\HLB_ITIP_LR3.pdb
