@@ -10,7 +10,7 @@ namespace HLP_RKP_LR1.Models
 {
     internal class Patient
     {
-        private static List<Patient> items;
+        public static List<Patient> items;
         private static readonly string fileName = "patients.xml";
         private static readonly string xmlItemName = "patient";
 

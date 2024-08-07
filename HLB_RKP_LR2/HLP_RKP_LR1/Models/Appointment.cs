@@ -10,7 +10,7 @@ namespace HLP_RKP_LR1.Models
 {
     internal class Appointment
     {
-        private static List<Appointment> items;
+        public static List<Appointment> items;
         private static readonly string fileName = "appointments.xml";
         private static readonly string xmlItemName = "appointment";
 

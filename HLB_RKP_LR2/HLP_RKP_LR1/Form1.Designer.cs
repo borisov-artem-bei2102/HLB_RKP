@@ -408,6 +408,7 @@
             this.createDiagramBtn.TabIndex = 17;
             this.createDiagramBtn.Text = "Создать диаграмму";
             this.createDiagramBtn.UseVisualStyleBackColor = true;
+            this.createDiagramBtn.Click += new System.EventHandler(this.createDiagramBtn_Click);
             // 
             // Form1
             // 

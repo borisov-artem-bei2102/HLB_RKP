@@ -1,8 +1,11 @@
 ﻿using HLP_RKP_LR1.Models;
+using HLP_RKP_LR2;
 using HLP_RKP_LR2.Models;
+using LiveCharts.Wpf;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using System.Windows.Forms.Integration;
 
 namespace HLP_RKP_LR1
 {
@@ -89,8 +92,14 @@ namespace HLP_RKP_LR1
 
         private void createWordBtn_Click(object sender, EventArgs e)
         {
-            WordDocumentCreator.CreateDocument("./", "doc.docx", "Hello");
-            MessageBox.Show("Создали отчет!");
+            WordDocumentCreator.CreateDocument("./", "report.docx");
+            MessageBox.Show("Успешно создали отчет!", "Создание отчета", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+        }
+
+        private void createDiagramBtn_Click(object sender, EventArgs e)
+        {
+            ChartsForm form = new ChartsForm();
+            form.ShowDialog();
         }
     }
 }

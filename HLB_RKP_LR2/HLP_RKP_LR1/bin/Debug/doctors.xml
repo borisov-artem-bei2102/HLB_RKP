@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <doctors>
   <doctor>
-    <id>1</id>
+    <id>21</id>
     <name>1123</name>
     <birth>123123</birth>
-    <departmentID>12313</departmentID>
-    <positionID>123123</positionID>
+    <departmentID>51</departmentID>
+    <positionID>1</positionID>
     <sex>Мужской</sex>
   </doctor>
 </doctors>

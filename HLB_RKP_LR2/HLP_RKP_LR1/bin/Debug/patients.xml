@@ -1,2 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<patients />
+<patients>
+  <patient>
+    <id>1</id>
+    <name>Иванов Иван Иванович</name>
+    <birth>14.01.2005</birth>
+    <polis>3333333</polis>
+    <passport>0000000</passport>
+    <sex>Мужской</sex>
+  </patient>
+</patients>

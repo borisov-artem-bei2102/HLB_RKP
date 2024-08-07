@@ -2,6 +2,7 @@
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
+using HLP_RKP_LR1.Models;
 
 namespace HLP_RKP_LR2.Models
 {
@@ -9,14 +10,12 @@ namespace HLP_RKP_LR2.Models
     {
         private const string DEFAULT_FONT_SIZE = "28";
 
-        public static void CreateDocument(string filePath, string fileName, string content)
+        public static void CreateDocument(string filePath, string fileName)
         {
             using (WordprocessingDocument wordDocument = WordprocessingDocument.Create(filePath + fileName, WordprocessingDocumentType.Document))
             {
                 Body body = CreateBody(wordDocument);
-                AddPlain(body, "Plain");
-                AddBold(body, "Bold");
-                AddItalic(body, "Italic");
+                AddBold(body, "Отчет о пациентах");
                 AddTable(body);
                 SaveDocument(wordDocument);
             }
@@ -65,29 +64,39 @@ namespace HLP_RKP_LR2.Models
             return new Justification() { Val = JustificationValues.Center };
         }
 
-        private static void AddPlain(Body body, string content, string fontSize = DEFAULT_FONT_SIZE)
-        {
-            Paragraph p = GetParagraph(content, GetParams(GetFontSize(fontSize)), GetParams());
-            body.AppendChild(p);
-        }
-
         private static void AddBold(Body body, string content, string fontSize = DEFAULT_FONT_SIZE)
         {
             Paragraph p = GetParagraph(content, GetParams(GetFontSize(fontSize), new Bold()), GetParams());
             body.AppendChild(p);
         }
 
-        private static void AddItalic(Body body, string content, string fontSize = DEFAULT_FONT_SIZE)
+        private static void AddPlain(Body body, string content, string fontSize = DEFAULT_FONT_SIZE)
         {
-            Paragraph p = GetParagraph(content, GetParams(GetFontSize(fontSize), new Italic()), GetParams());
+            Paragraph p = GetParagraph(content, GetParams(GetFontSize(fontSize)), GetParams());
             body.AppendChild(p);
         }
 
         private static void AddTable(Body body, string fontSize = DEFAULT_FONT_SIZE)
         {
             Table table = GetTable();
-            AddRow(table, fontSize, "1", "2", "3");
-            AddRow(table, fontSize, "1", "3");
+            if (Patient.items.Count == 0)
+            {
+                AddPlain(body, "Пока что нет записей о пациентах...");
+                return;
+            }
+            AddRow(table, fontSize, "ФИО", "Дата рождения", "Пол", "Кол-во приемов");
+            Patient.items.ForEach(patient =>
+            {
+                int appointments = 0;
+                Appointment.items.ForEach(appointment =>
+                {
+                    if (appointment.PatientID == patient.ID)
+                    {
+                        appointments++;
+                    }
+                });
+                AddRow(table, fontSize, patient.Name, patient.Birth, patient.Sex, appointments.ToString());
+            });
             body.AppendChild(table);
         }
 
