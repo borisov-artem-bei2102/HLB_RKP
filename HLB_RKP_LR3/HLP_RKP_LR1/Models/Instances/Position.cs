@@ -1,0 +1,17 @@
+﻿using HLP_RKP_LR2.Models;
+using System.Collections.Generic;
+
+namespace HLP_RKP_LR1.Models
+{
+    internal class Position
+    {
+        public static List<TableItem> items = new List<TableItem>();
+        public static readonly string fileName = "xml/Должности.xml";
+        public static readonly string xmlElementName = "Должность";
+        public static Dictionary<string, ItemTypes> schema = new Dictionary<string, ItemTypes>()
+        {
+            { "Код", ItemTypes.num },
+            { "Название", ItemTypes.str },
+        };
+    }
+}
