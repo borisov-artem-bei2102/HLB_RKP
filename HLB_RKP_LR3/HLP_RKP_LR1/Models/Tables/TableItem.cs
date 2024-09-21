@@ -1,14 +1,6 @@
-﻿using DocumentFormat.OpenXml.Drawing;
-using DocumentFormat.OpenXml.Spreadsheet;
-using HLP_RKP_LR2.Models;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Windows.Forms;
-using System.Xml;
+﻿using System.Collections.Generic;
 
-namespace HLP_RKP_LR1.Models
+namespace HLP_RKP_LR3.Models
 {
     public class TableItem
     {

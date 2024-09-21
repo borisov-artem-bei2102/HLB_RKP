@@ -1,15 +1,8 @@
-﻿using DocumentFormat.OpenXml.Spreadsheet;
-using HLP_RKP_LR2.Models;
-using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms.VisualStyles;
 using System.Xml;
 
-namespace HLP_RKP_LR1.Models
+namespace HLP_RKP_LR3.Models
 {
     internal class XMLEditor
     {

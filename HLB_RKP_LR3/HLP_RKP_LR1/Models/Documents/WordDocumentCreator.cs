@@ -2,7 +2,7 @@
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
 
-namespace HLP_RKP_LR2.Models
+namespace HLP_RKP_LR3.Models
 {
     public class WordDocumentCreator
     {

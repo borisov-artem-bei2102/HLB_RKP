@@ -3,10 +3,9 @@ using LiveChartsCore.SkiaSharpView.WinForms;
 using System;
 using System.Collections.Generic;
 using LiveChartsCore.SkiaSharpView;
-using HLP_RKP_LR1.Models;
 using System.Linq;
 
-namespace HLP_RKP_LR2.Models
+namespace HLP_RKP_LR3.Models
 {
     internal class Charts
     {

@@ -1,9 +1,8 @@
-﻿using HLP_RKP_LR2.Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace HLP_RKP_LR1.Models
+namespace HLP_RKP_LR3.Models
 {
-    internal class Position
+    public class Position
     {
         public static List<TableItem> items = new List<TableItem>();
         public static readonly string fileName = "xml/Должности.xml";

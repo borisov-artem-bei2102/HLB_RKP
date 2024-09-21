@@ -1,28 +1,14 @@
-﻿using DocumentFormat.OpenXml.CustomXmlSchemaReferences;
-using DocumentFormat.OpenXml.Drawing;
-using DocumentFormat.OpenXml.Spreadsheet;
-using HLP_RKP_LR1.Models;
+﻿using DocumentFormat.OpenXml.Spreadsheet;
+using DocumentFormat.OpenXml.Wordprocessing;
+using HLP_RKP_LR3.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.Xml.Linq;
 
-// 1. инициализация
-// 1.1 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-namespace HLP_RKP_LR2.Models
+namespace HLP_RKP_LR3.Models
 {
     internal class TableMethods
     {
@@ -183,8 +169,10 @@ namespace HLP_RKP_LR2.Models
             return valuesElement;
         }
 
-        public static void UpdateValuesBySchema(List<TableItem> items, Dictionary<string, ItemTypes> schema)
+        public static void UpdateTableOnAdd(string name, ItemTypes type, List<TableItem> items, Dictionary<string, ItemTypes> schema)
         {
+            schema.Add(name, type);
+
             foreach (TableItem item in items)
             {
                 foreach (KeyValuePair<string, ItemTypes> pair in schema)
@@ -192,8 +180,64 @@ namespace HLP_RKP_LR2.Models
                     if (!item.Values.ContainsKey(pair.Key))
                     {
                         item.Values.Add(pair.Key, new TypedItem("", pair.Value));
+                        break;
                     }
+                }
+            }
+        }
 
+        public static void UpdateTableOnDelete(string name, List<TableItem> items, Dictionary<string, ItemTypes> schema)
+        {
+            schema.Remove(name);
+
+            foreach (TableItem item in items)
+            {
+                foreach (KeyValuePair<string, TypedItem> pair in item.Values)
+                {
+                    if (!schema.ContainsKey(pair.Key))
+                    {
+                        item.Values.Remove(pair.Key);
+                        break;
+                    }
+                }
+            }
+        }
+
+        public static void UpdateTableOnEdit(string oldColName, string newColName, ItemTypes newType, List<TableItem> items, Dictionary<string, ItemTypes> schema)
+        {
+            Dictionary<string, ItemTypes> oldSchema = schema.ToDictionary(entry => entry.Key, entry => entry.Value);
+            schema.Clear();
+            foreach (KeyValuePair<string, ItemTypes> pair in oldSchema)
+            {
+                if (pair.Key == oldColName)
+                {
+                    schema.Add(newColName, newType);
+                }
+                else
+                {
+                    schema.Add(pair.Key, pair.Value);
+                }
+            }
+
+            foreach (TableItem item in items)
+            {
+                Dictionary<string, TypedItem> oldValues = item.Values.ToDictionary(entry => entry.Key, entry => entry.Value);
+                item.Values.Clear();
+
+                foreach (KeyValuePair<string, TypedItem> pair in oldValues)
+                {
+                    if (pair.Key == oldColName)
+                    {
+                        TypedItem newItem = pair.Value;
+                        ItemTypes schemaType = schema[newColName];
+                        newItem.Type = schemaType;
+                        newItem.Validate(false);
+                        item.Values.Add(newColName, newItem);
+                    }
+                    else
+                    {
+                        item.Values.Add(pair.Key, pair.Value);
+                    }
                 }
             }
         }

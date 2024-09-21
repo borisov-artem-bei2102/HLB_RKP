@@ -1,12 +1,8 @@
-﻿using HLP_RKP_LR2.Models;
-using System;
-using System.Collections.Generic;
-using System.Windows.Forms;
-using System.Xml;
+﻿using System.Collections.Generic;
 
-namespace HLP_RKP_LR1.Models
+namespace HLP_RKP_LR3.Models
 {
-    internal class Appointment
+    public class Appointment
     {
         public static List<TableItem> items = new List<TableItem>();
         public static readonly string fileName = "xml/Приемы.xml";

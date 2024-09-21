@@ -1,16 +1,8 @@
-﻿using HLP_RKP_LR1.Models;
-using HLP_RKP_LR2.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Xml;
+﻿using System.Collections.Generic;
 
-namespace HLP_RKP_LR1
+namespace HLP_RKP_LR3.Models
 {
-    internal class Department
+    public class Department
     {
         public static List<TableItem> items = new List<TableItem>();
         public static readonly string fileName = "xml/Отделения.xml";

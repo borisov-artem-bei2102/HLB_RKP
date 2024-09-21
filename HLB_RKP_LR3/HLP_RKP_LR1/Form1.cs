@@ -1,9 +1,7 @@
-﻿using HLP_RKP_LR1.Models;
-using HLP_RKP_LR2;
-using HLP_RKP_LR2.Models;
-using HLP_RKP_LR2.Models.Tables;
-using System;
+﻿using System;
 using System.Windows.Forms;
+using HLP_RKP_LR2;
+using HLP_RKP_LR3.Models;
 
 namespace HLP_RKP_LR1
 {
@@ -87,34 +85,10 @@ namespace HLP_RKP_LR1
             form.ShowDialog();
         }
 
-        private void addDepartmentsColBtn_Click(object sender, EventArgs e)
+        private void editTablesBtn_Click(object sender, EventArgs e)
         {
-            Form form = new AddColumnForm(dgvDepartment, Department.items, Department.schema);
-            form.ShowDialog();
-        }
-
-        private void addPositionsColBtn_Click(object sender, EventArgs e)
-        {
-            Form form = new AddColumnForm(dgvPosition, Position.items, Position.schema);
-            form.ShowDialog();
-        }
-
-        private void addDoctorsColBtn_Click(object sender, EventArgs e)
-        {
-            Form form = new AddColumnForm(dgvDoctor, Doctor.items, Doctor.schema);
-            form.ShowDialog();
-        }
-
-        private void addPatientsColBtn_Click(object sender, EventArgs e)
-        {
-            Form form = new AddColumnForm(dgvPatient, Patient.items, Patient.schema);
-            form.ShowDialog();
-        }
-
-        private void addAppointmentsColBtn_Click(object sender, EventArgs e)
-        {
-            Form form = new AddColumnForm(dgvAppointment, Appointment.items, Appointment.schema);
-            form.ShowDialog();
+            Form editForm = new EditTable(dgvDepartment, dgvPosition, dgvDoctor, dgvPatient, dgvAppointment);
+            editForm.ShowDialog();
         }
     }
 }

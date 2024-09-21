@@ -61,18 +61,9 @@
             this.appointmentTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.appointmentReport = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSave = new System.Windows.Forms.Button();
-            this.delPatientRows = new System.Windows.Forms.Button();
-            this.delAppointmentRows = new System.Windows.Forms.Button();
-            this.delDepartmentRows = new System.Windows.Forms.Button();
-            this.delPositionRows = new System.Windows.Forms.Button();
-            this.delDoctorRows = new System.Windows.Forms.Button();
             this.createWordBtn = new System.Windows.Forms.Button();
             this.createDiagramBtn = new System.Windows.Forms.Button();
-            this.addPatientsColBtn = new System.Windows.Forms.Button();
-            this.addAppointmentsColBtn = new System.Windows.Forms.Button();
-            this.addDepartmentsColBtn = new System.Windows.Forms.Button();
-            this.addPositionsColBtn = new System.Windows.Forms.Button();
-            this.addDoctorsColBtn = new System.Windows.Forms.Button();
+            this.editTablesBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDepartment)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPosition)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDoctor)).BeginInit();
@@ -190,7 +181,7 @@
             this.patientPolis,
             this.patientPassport,
             this.patientSex});
-            this.dgvPatient.Location = new System.Drawing.Point(9, 304);
+            this.dgvPatient.Location = new System.Drawing.Point(9, 234);
             this.dgvPatient.Name = "dgvPatient";
             this.dgvPatient.Size = new System.Drawing.Size(713, 178);
             this.dgvPatient.TabIndex = 3;
@@ -262,7 +253,7 @@
             // 
             this.lbl.AutoSize = true;
             this.lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbl.Location = new System.Drawing.Point(6, 285);
+            this.lbl.Location = new System.Drawing.Point(6, 215);
             this.lbl.Name = "lbl";
             this.lbl.Size = new System.Drawing.Size(73, 16);
             this.lbl.TabIndex = 7;
@@ -272,7 +263,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(725, 285);
+            this.label4.Location = new System.Drawing.Point(725, 215);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 16);
             this.label4.TabIndex = 9;
@@ -289,7 +280,7 @@
             this.appointmentDate,
             this.appointmentTime,
             this.appointmentReport});
-            this.dgvAppointment.Location = new System.Drawing.Point(728, 304);
+            this.dgvAppointment.Location = new System.Drawing.Point(728, 234);
             this.dgvAppointment.Name = "dgvAppointment";
             this.dgvAppointment.Size = new System.Drawing.Size(710, 178);
             this.dgvAppointment.TabIndex = 8;
@@ -330,7 +321,7 @@
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnSave.Location = new System.Drawing.Point(9, 580);
+            this.btnSave.Location = new System.Drawing.Point(9, 459);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(1429, 35);
             this.btnSave.TabIndex = 10;
@@ -338,65 +329,10 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // delPatientRows
-            // 
-            this.delPatientRows.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.delPatientRows.Location = new System.Drawing.Point(9, 523);
-            this.delPatientRows.Name = "delPatientRows";
-            this.delPatientRows.Size = new System.Drawing.Size(713, 29);
-            this.delPatientRows.TabIndex = 11;
-            this.delPatientRows.Text = "Удалить выделенные";
-            this.delPatientRows.UseVisualStyleBackColor = true;
-            this.delPatientRows.Click += new System.EventHandler(this.delPatientRows_Click);
-            // 
-            // delAppointmentRows
-            // 
-            this.delAppointmentRows.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.delAppointmentRows.Location = new System.Drawing.Point(728, 523);
-            this.delAppointmentRows.Name = "delAppointmentRows";
-            this.delAppointmentRows.Size = new System.Drawing.Size(710, 29);
-            this.delAppointmentRows.TabIndex = 12;
-            this.delAppointmentRows.Text = "Удалить выделенные";
-            this.delAppointmentRows.UseVisualStyleBackColor = true;
-            this.delAppointmentRows.Click += new System.EventHandler(this.delAppointmentRows_Click);
-            // 
-            // delDepartmentRows
-            // 
-            this.delDepartmentRows.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.delDepartmentRows.Location = new System.Drawing.Point(9, 244);
-            this.delDepartmentRows.Name = "delDepartmentRows";
-            this.delDepartmentRows.Size = new System.Drawing.Size(354, 29);
-            this.delDepartmentRows.TabIndex = 13;
-            this.delDepartmentRows.Text = "Удалить выделенные";
-            this.delDepartmentRows.UseVisualStyleBackColor = true;
-            this.delDepartmentRows.Click += new System.EventHandler(this.delDepartmentRows_Click);
-            // 
-            // delPositionRows
-            // 
-            this.delPositionRows.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.delPositionRows.Location = new System.Drawing.Point(369, 244);
-            this.delPositionRows.Name = "delPositionRows";
-            this.delPositionRows.Size = new System.Drawing.Size(353, 29);
-            this.delPositionRows.TabIndex = 14;
-            this.delPositionRows.Text = "Удалить выделенные";
-            this.delPositionRows.UseVisualStyleBackColor = true;
-            this.delPositionRows.Click += new System.EventHandler(this.delPositionRows_Click);
-            // 
-            // delDoctorRows
-            // 
-            this.delDoctorRows.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.delDoctorRows.Location = new System.Drawing.Point(728, 244);
-            this.delDoctorRows.Name = "delDoctorRows";
-            this.delDoctorRows.Size = new System.Drawing.Size(710, 29);
-            this.delDoctorRows.TabIndex = 15;
-            this.delDoctorRows.Text = "Удалить выделенные";
-            this.delDoctorRows.UseVisualStyleBackColor = true;
-            this.delDoctorRows.Click += new System.EventHandler(this.delDoctorRows_Click);
-            // 
             // createWordBtn
             // 
             this.createWordBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.createWordBtn.Location = new System.Drawing.Point(728, 621);
+            this.createWordBtn.Location = new System.Drawing.Point(731, 500);
             this.createWordBtn.Name = "createWordBtn";
             this.createWordBtn.Size = new System.Drawing.Size(707, 35);
             this.createWordBtn.TabIndex = 16;
@@ -407,86 +343,33 @@
             // createDiagramBtn
             // 
             this.createDiagramBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.createDiagramBtn.Location = new System.Drawing.Point(9, 621);
+            this.createDiagramBtn.Location = new System.Drawing.Point(9, 500);
             this.createDiagramBtn.Name = "createDiagramBtn";
-            this.createDiagramBtn.Size = new System.Drawing.Size(713, 35);
+            this.createDiagramBtn.Size = new System.Drawing.Size(716, 35);
             this.createDiagramBtn.TabIndex = 17;
             this.createDiagramBtn.Text = "Создать диаграмму";
             this.createDiagramBtn.UseVisualStyleBackColor = true;
             this.createDiagramBtn.Click += new System.EventHandler(this.createDiagramBtn_Click);
             // 
-            // addPatientsColBtn
+            // editTablesBtn
             // 
-            this.addPatientsColBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addPatientsColBtn.Location = new System.Drawing.Point(9, 488);
-            this.addPatientsColBtn.Name = "addPatientsColBtn";
-            this.addPatientsColBtn.Size = new System.Drawing.Size(713, 29);
-            this.addPatientsColBtn.TabIndex = 18;
-            this.addPatientsColBtn.Text = "Добавить столбец";
-            this.addPatientsColBtn.UseVisualStyleBackColor = true;
-            this.addPatientsColBtn.Click += new System.EventHandler(this.addPatientsColBtn_Click);
-            // 
-            // addAppointmentsColBtn
-            // 
-            this.addAppointmentsColBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addAppointmentsColBtn.Location = new System.Drawing.Point(728, 488);
-            this.addAppointmentsColBtn.Name = "addAppointmentsColBtn";
-            this.addAppointmentsColBtn.Size = new System.Drawing.Size(710, 29);
-            this.addAppointmentsColBtn.TabIndex = 19;
-            this.addAppointmentsColBtn.Text = "Добавить столбец";
-            this.addAppointmentsColBtn.UseVisualStyleBackColor = true;
-            this.addAppointmentsColBtn.Click += new System.EventHandler(this.addAppointmentsColBtn_Click);
-            // 
-            // addDepartmentsColBtn
-            // 
-            this.addDepartmentsColBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addDepartmentsColBtn.Location = new System.Drawing.Point(9, 209);
-            this.addDepartmentsColBtn.Name = "addDepartmentsColBtn";
-            this.addDepartmentsColBtn.Size = new System.Drawing.Size(354, 29);
-            this.addDepartmentsColBtn.TabIndex = 20;
-            this.addDepartmentsColBtn.Text = "Добавить столбец";
-            this.addDepartmentsColBtn.UseVisualStyleBackColor = true;
-            this.addDepartmentsColBtn.Click += new System.EventHandler(this.addDepartmentsColBtn_Click);
-            // 
-            // addPositionsColBtn
-            // 
-            this.addPositionsColBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addPositionsColBtn.Location = new System.Drawing.Point(369, 209);
-            this.addPositionsColBtn.Name = "addPositionsColBtn";
-            this.addPositionsColBtn.Size = new System.Drawing.Size(353, 29);
-            this.addPositionsColBtn.TabIndex = 21;
-            this.addPositionsColBtn.Text = "Добавить столбец";
-            this.addPositionsColBtn.UseVisualStyleBackColor = true;
-            this.addPositionsColBtn.Click += new System.EventHandler(this.addPositionsColBtn_Click);
-            // 
-            // addDoctorsColBtn
-            // 
-            this.addDoctorsColBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addDoctorsColBtn.Location = new System.Drawing.Point(728, 209);
-            this.addDoctorsColBtn.Name = "addDoctorsColBtn";
-            this.addDoctorsColBtn.Size = new System.Drawing.Size(710, 29);
-            this.addDoctorsColBtn.TabIndex = 22;
-            this.addDoctorsColBtn.Text = "Добавить столбец";
-            this.addDoctorsColBtn.UseVisualStyleBackColor = true;
-            this.addDoctorsColBtn.Click += new System.EventHandler(this.addDoctorsColBtn_Click);
+            this.editTablesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.editTablesBtn.Location = new System.Drawing.Point(9, 418);
+            this.editTablesBtn.Name = "editTablesBtn";
+            this.editTablesBtn.Size = new System.Drawing.Size(1429, 35);
+            this.editTablesBtn.TabIndex = 23;
+            this.editTablesBtn.Text = "Редактировать таблицы";
+            this.editTablesBtn.UseVisualStyleBackColor = true;
+            this.editTablesBtn.Click += new System.EventHandler(this.editTablesBtn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1450, 673);
-            this.Controls.Add(this.addDoctorsColBtn);
-            this.Controls.Add(this.addPositionsColBtn);
-            this.Controls.Add(this.addDepartmentsColBtn);
-            this.Controls.Add(this.addAppointmentsColBtn);
-            this.Controls.Add(this.addPatientsColBtn);
+            this.ClientSize = new System.Drawing.Size(1450, 545);
+            this.Controls.Add(this.editTablesBtn);
             this.Controls.Add(this.createDiagramBtn);
             this.Controls.Add(this.createWordBtn);
-            this.Controls.Add(this.delDoctorRows);
-            this.Controls.Add(this.delPositionRows);
-            this.Controls.Add(this.delDepartmentRows);
-            this.Controls.Add(this.delAppointmentRows);
-            this.Controls.Add(this.delPatientRows);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dgvAppointment);
@@ -546,18 +429,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn appointmentTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn appointmentReport;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button delPatientRows;
-        private System.Windows.Forms.Button delAppointmentRows;
-        private System.Windows.Forms.Button delDepartmentRows;
-        private System.Windows.Forms.Button delPositionRows;
-        private System.Windows.Forms.Button delDoctorRows;
         private System.Windows.Forms.Button createWordBtn;
         private System.Windows.Forms.Button createDiagramBtn;
-        private System.Windows.Forms.Button addPatientsColBtn;
-        private System.Windows.Forms.Button addAppointmentsColBtn;
-        private System.Windows.Forms.Button addDepartmentsColBtn;
-        private System.Windows.Forms.Button addPositionsColBtn;
-        private System.Windows.Forms.Button addDoctorsColBtn;
+        private System.Windows.Forms.Button editTablesBtn;
     }
 }
 

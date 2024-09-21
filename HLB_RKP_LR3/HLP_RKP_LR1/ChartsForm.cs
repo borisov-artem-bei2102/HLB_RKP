@@ -1,8 +1,5 @@
 ﻿using System.Windows.Forms;
-using LiveChartsCore.SkiaSharpView;
-using LiveChartsCore;
-using System.Collections.Generic;
-using HLP_RKP_LR2.Models;
+using HLP_RKP_LR3.Models;
 
 namespace HLP_RKP_LR2
 {

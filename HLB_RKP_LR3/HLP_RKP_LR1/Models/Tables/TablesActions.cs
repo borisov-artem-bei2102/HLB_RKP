@@ -1,9 +1,7 @@
-﻿using HLP_RKP_LR1;
-using HLP_RKP_LR1.Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace HLP_RKP_LR2.Models.Tables
+namespace HLP_RKP_LR3.Models
 {
     internal class TablesActions
     {
@@ -27,8 +25,22 @@ namespace HLP_RKP_LR2.Models.Tables
 
         public static void AddColumn(string name, ItemTypes type, DataGridView dgv, List<TableItem> items, Dictionary<string, ItemTypes> schema)
         {
-            schema.Add(name, type);
-            TableMethods.UpdateValuesBySchema(items, schema);
+            
+            TableMethods.UpdateTableOnAdd(name, type, items, schema);
+            TableMethods.InitDGV(dgv, items, schema);
+        }
+
+        public static void DeleteColumn(string name, DataGridView dgv, List<TableItem> items, Dictionary<string, ItemTypes> schema)
+        {
+            
+            TableMethods.UpdateTableOnDelete(name, items, schema);
+            TableMethods.InitDGV(dgv, items, schema);
+        }
+
+        public static void EditColumn(string oldColName, string newColName, ItemTypes newType, DataGridView dgv, List<TableItem> items, Dictionary<string, ItemTypes> schema)
+        {
+            
+            TableMethods.UpdateTableOnEdit(oldColName, newColName, newType, items, schema);
             TableMethods.InitDGV(dgv, items, schema);
         }
     }
