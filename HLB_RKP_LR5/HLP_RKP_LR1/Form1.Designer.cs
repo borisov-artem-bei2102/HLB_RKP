@@ -61,8 +61,6 @@
             this.appointmentTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.appointmentReport = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSave = new System.Windows.Forms.Button();
-            this.createWordBtn = new System.Windows.Forms.Button();
-            this.createDiagramBtn = new System.Windows.Forms.Button();
             this.editTablesBtn = new System.Windows.Forms.Button();
             this.deleteDepartmentBtn = new System.Windows.Forms.Button();
             this.deletePositionBtn = new System.Windows.Forms.Button();
@@ -339,28 +337,6 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // createWordBtn
-            // 
-            this.createWordBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.createWordBtn.Location = new System.Drawing.Point(737, 639);
-            this.createWordBtn.Name = "createWordBtn";
-            this.createWordBtn.Size = new System.Drawing.Size(707, 35);
-            this.createWordBtn.TabIndex = 16;
-            this.createWordBtn.Text = "Создать отчёт";
-            this.createWordBtn.UseVisualStyleBackColor = true;
-            this.createWordBtn.Click += new System.EventHandler(this.createWordBtn_Click);
-            // 
-            // createDiagramBtn
-            // 
-            this.createDiagramBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.createDiagramBtn.Location = new System.Drawing.Point(15, 639);
-            this.createDiagramBtn.Name = "createDiagramBtn";
-            this.createDiagramBtn.Size = new System.Drawing.Size(716, 35);
-            this.createDiagramBtn.TabIndex = 17;
-            this.createDiagramBtn.Text = "Создать диаграмму";
-            this.createDiagramBtn.UseVisualStyleBackColor = true;
-            this.createDiagramBtn.Click += new System.EventHandler(this.createDiagramBtn_Click);
-            // 
             // editTablesBtn
             // 
             this.editTablesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -464,7 +440,7 @@
             // exportDBBtn
             // 
             this.exportDBBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.exportDBBtn.Location = new System.Drawing.Point(15, 680);
+            this.exportDBBtn.Location = new System.Drawing.Point(15, 639);
             this.exportDBBtn.Name = "exportDBBtn";
             this.exportDBBtn.Size = new System.Drawing.Size(716, 35);
             this.exportDBBtn.TabIndex = 33;
@@ -475,7 +451,7 @@
             // importDBBtn
             // 
             this.importDBBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.importDBBtn.Location = new System.Drawing.Point(737, 680);
+            this.importDBBtn.Location = new System.Drawing.Point(737, 639);
             this.importDBBtn.Name = "importDBBtn";
             this.importDBBtn.Size = new System.Drawing.Size(707, 35);
             this.importDBBtn.TabIndex = 32;
@@ -487,7 +463,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1460, 733);
+            this.ClientSize = new System.Drawing.Size(1460, 686);
             this.Controls.Add(this.exportDBBtn);
             this.Controls.Add(this.importDBBtn);
             this.Controls.Add(this.loginAdminBtn);
@@ -499,8 +475,6 @@
             this.Controls.Add(this.deletePositionBtn);
             this.Controls.Add(this.deleteDepartmentBtn);
             this.Controls.Add(this.editTablesBtn);
-            this.Controls.Add(this.createDiagramBtn);
-            this.Controls.Add(this.createWordBtn);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dgvAppointment);
@@ -560,8 +534,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn appointmentTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn appointmentReport;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button createWordBtn;
-        private System.Windows.Forms.Button createDiagramBtn;
         private System.Windows.Forms.Button editTablesBtn;
         private System.Windows.Forms.Button deleteDepartmentBtn;
         private System.Windows.Forms.Button deletePositionBtn;

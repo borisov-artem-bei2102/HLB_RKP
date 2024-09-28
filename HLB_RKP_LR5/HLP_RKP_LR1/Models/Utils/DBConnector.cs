@@ -2,7 +2,6 @@
 using MySqlConnector;
 using System;
 using System.Collections.Generic;
-using System.Windows.Forms;
 
 namespace HLP_RKP_LR2.Models.Utils
 {
@@ -116,7 +115,7 @@ namespace HLP_RKP_LR2.Models.Utils
             return columnsWithIDs;
         }
 
-        public static Dictionary<string, int> ExportData(MySqlConnection connection, int tableID, Dictionary<string, int> columnsWithIDs, List<TableItem> items)
+        public static void ExportData(MySqlConnection connection, int tableID, Dictionary<string, int> columnsWithIDs, List<TableItem> items)
         {
             string query;
             foreach (TableItem item in items)
@@ -132,8 +131,6 @@ namespace HLP_RKP_LR2.Models.Utils
                     ExecuteCommandNonQuery(query, connection);
                 }
             }
-
-            return columnsWithIDs;
         }
 
         public static void ImportTable(string tableName, Dictionary<string, ItemTypes> schema, List<TableItem> items)
@@ -170,19 +167,15 @@ namespace HLP_RKP_LR2.Models.Utils
         {
             schema.Clear();
 
-            Dictionary<string, int> columnsWithIDs = new Dictionary<string, int>();
-
             string query = $"select * from {COLUMNS_TABLE} where table_id = {tableID}";
             MySqlDataReader reader = ExecuteCommandReader(connection, query);
             while (reader.Read())
             {
-                int id = reader.GetInt32("id");
                 string name = reader.GetString("name");
                 string data_type = reader.GetString("data_type");
                 ItemTypes type = TypedItem.StringToTypeDict[data_type];
 
                 schema.Add(name, type);
-                columnsWithIDs.Add(name, id);
             }
 
             reader.Close();
@@ -199,11 +192,6 @@ namespace HLP_RKP_LR2.Models.Utils
                 + $" where {ITEMS_TABLE}.table_id = {tableID}";
 
             MySqlDataReader reader = ExecuteCommandReader(connection, query);
-
-            if (!reader.HasRows)
-            {
-                return;
-            }
 
             int columnCount = 0;
             Dictionary<string, string> itemValues = new Dictionary<string, string>();

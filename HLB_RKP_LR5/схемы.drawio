@@ -1,0 +1,378 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
+  <diagram name="Страница — 1" id="R8XnnEVmH2Fg10V8Gqf3">
+    <mxGraphModel dx="1195" dy="697" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-1" target="FQ-c0hYM6GL1p2h-1yDK-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-1" value="Начало" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="400" y="40" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-2" target="FQ-c0hYM6GL1p2h-1yDK-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-2" value="Открыть соединение с БД" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-4" target="FQ-c0hYM6GL1p2h-1yDK-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-4" value="Создать запись о таблице в БД" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-5" target="FQ-c0hYM6GL1p2h-1yDK-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-5" value="Получить ID созданной таблицы" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-6" target="FQ-c0hYM6GL1p2h-1yDK-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-6" value="Экспортировать столбцы" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-7" target="FQ-c0hYM6GL1p2h-1yDK-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-7" value="Экспортировать данные" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-8" value="Прологировать запись об успешном экспорте" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-14" target="FQ-c0hYM6GL1p2h-1yDK-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-14" value="Закрыть соединение с БД" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-17" value="Конец" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="400" y="660" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-8" target="FQ-c0hYM6GL1p2h-1yDK-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-19" value="Начало" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="640" y="40" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-20" target="FQ-c0hYM6GL1p2h-1yDK-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-20" value="Столбец в&lt;div&gt;схеме таблицы&lt;/div&gt;" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="630" y="100" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-19" target="FQ-c0hYM6GL1p2h-1yDK-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-22" target="FQ-c0hYM6GL1p2h-1yDK-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-22" value="Создать запись о столбце в БД" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-24" target="FQ-c0hYM6GL1p2h-1yDK-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-24" value="Получить ID созданной записи" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-28" value="Сохранить ID созданного столбца по его названию" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-30" value="Вернуть список созданных колонн и их ID" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-31" target="FQ-c0hYM6GL1p2h-1yDK-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-31" value="Столбец в&lt;div&gt;схеме таблицы&lt;/div&gt;" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;direction=west;" vertex="1" parent="1">
+          <mxGeometry x="630" y="420" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-28" target="FQ-c0hYM6GL1p2h-1yDK-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-34" value="Конец" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="640" y="580" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-36" value="Начало" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="840" y="40" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-37" target="FQ-c0hYM6GL1p2h-1yDK-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-37" value="Запись в&lt;div&gt;записях&lt;/div&gt;&lt;div&gt;таблицы&lt;/div&gt;" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="830" y="100" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-38" target="FQ-c0hYM6GL1p2h-1yDK-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-38" value="Создать запись о записи в БД" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-40" value="Получить ID созданной записи" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-30" target="FQ-c0hYM6GL1p2h-1yDK-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-44" target="FQ-c0hYM6GL1p2h-1yDK-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-44" value="Столбец в записи" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="830" y="340" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-45" value="Создать запись о данных в БД" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-40" target="FQ-c0hYM6GL1p2h-1yDK-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-48" value="Столбец в записи" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;direction=west;" vertex="1" parent="1">
+          <mxGeometry x="830" y="500" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-45" target="FQ-c0hYM6GL1p2h-1yDK-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-51" value="Запись в&lt;div&gt;записях&lt;/div&gt;&lt;div&gt;таблицы&lt;/div&gt;" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;direction=west;" vertex="1" parent="1">
+          <mxGeometry x="830" y="580" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-48" target="FQ-c0hYM6GL1p2h-1yDK-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-36" target="FQ-c0hYM6GL1p2h-1yDK-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-55" value="Конец" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="840" y="660" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-51" target="FQ-c0hYM6GL1p2h-1yDK-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-58" target="FQ-c0hYM6GL1p2h-1yDK-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-58" value="Начало" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="400" y="760" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-60" target="FQ-c0hYM6GL1p2h-1yDK-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-60" value="Открыть соединение с БД" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="820" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-62" target="FQ-c0hYM6GL1p2h-1yDK-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-62" value="Получить записи о таблице по ее названию из БД" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="900" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-64" target="FQ-c0hYM6GL1p2h-1yDK-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-64" value="Получить ID таблицы" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="980" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-66" target="FQ-c0hYM6GL1p2h-1yDK-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-66" value="Импортировать столбцы" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="1060" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-68" target="FQ-c0hYM6GL1p2h-1yDK-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-68" value="Импортировать данные" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="1140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-69" value="Прологировать запись об успешном импорте" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="1300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-71" target="FQ-c0hYM6GL1p2h-1yDK-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-71" value="Закрыть соединение с БД" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="1220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-72" value="Конец" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1380" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-69" target="FQ-c0hYM6GL1p2h-1yDK-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-74" target="FQ-c0hYM6GL1p2h-1yDK-106">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-74" value="Начало" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="640" y="760" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-76" target="FQ-c0hYM6GL1p2h-1yDK-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-76" value="Пока есть необработанная запись о столбце" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="630" y="900" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-79" target="FQ-c0hYM6GL1p2h-1yDK-85">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="1060.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-79" value="Заполнить схему таблицы данными о столбце" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="980" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-85" target="FQ-c0hYM6GL1p2h-1yDK-87">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="1140.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-85" value="Пока есть необработанная запись о столбце" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;direction=west;" vertex="1" parent="1">
+          <mxGeometry x="620" y="1060" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-87" value="Конец" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="640" y="1140" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-110" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-88" target="FQ-c0hYM6GL1p2h-1yDK-109">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-88" value="Начало" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="760" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-106" value="Получить записи о столбцах связанных с таблицей по ID из БД" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="820" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-106" target="FQ-c0hYM6GL1p2h-1yDK-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-109" target="FQ-c0hYM6GL1p2h-1yDK-111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-109" value="Получить записи о данных связанных с таблицей по ID из БД" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="820" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-111" value="Создать счетчик столбцов на одну запись" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="900" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-112" value="Пока есть необработанная запись о данных" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="980" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-113" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-111" target="FQ-c0hYM6GL1p2h-1yDK-112">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-115" target="FQ-c0hYM6GL1p2h-1yDK-118">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="950" y="1110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-125" value="Да" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FQ-c0hYM6GL1p2h-1yDK-119">
+          <mxGeometry x="-0.4955" y="-1" relative="1" as="geometry">
+            <mxPoint x="23" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-123" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-115">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1120" y="1240.0000000000002" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1240" y="1110" />
+              <mxPoint x="1240" y="1240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-124" value="Нет" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FQ-c0hYM6GL1p2h-1yDK-123">
+          <mxGeometry x="-0.644" y="-1" relative="1" as="geometry">
+            <mxPoint x="-19" y="-30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-115" value="Список&lt;div&gt;обработанных значений&lt;/div&gt;&lt;div&gt;не содержит данных&lt;/div&gt;&lt;div&gt;о столбце&lt;/div&gt;" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="1060" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-112" target="FQ-c0hYM6GL1p2h-1yDK-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-122" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-118" target="FQ-c0hYM6GL1p2h-1yDK-121">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="950" y="1240" />
+              <mxPoint x="1120" y="1240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-118" value="Добавить данные о столбце во временный список значений" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="1160" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-136" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-120">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1120" y="1640" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1220" y="1380" />
+              <mxPoint x="1220" y="1640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-137" value="Нет" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FQ-c0hYM6GL1p2h-1yDK-136">
+          <mxGeometry x="-0.9372" relative="1" as="geometry">
+            <mxPoint x="-2" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-120" value="Добавлены все&lt;div&gt;столбцы на одну&lt;/div&gt;&lt;div&gt;запись&lt;/div&gt;" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="1340" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-121" value="Увеличить счетчик столбцов на одну запись" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="1260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-126" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-121" target="FQ-c0hYM6GL1p2h-1yDK-120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-130" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-127" target="FQ-c0hYM6GL1p2h-1yDK-129">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-127" value="Добавить запись о данных в список записей таблицы" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="1420" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-128" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-120">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="1420" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="970" y="1380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-135" value="Да" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FQ-c0hYM6GL1p2h-1yDK-128">
+          <mxGeometry x="-0.7738" relative="1" as="geometry">
+            <mxPoint x="4" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-132" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-129" target="FQ-c0hYM6GL1p2h-1yDK-131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-129" value="Сбросить список временных значений" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="1500" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-131" value="Сбросить счетчик столбцов на одну запись" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="910" y="1560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-133" value="Пока есть необработанная запись о данных" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;direction=west;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="1660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-134" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-131" target="FQ-c0hYM6GL1p2h-1yDK-133">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1120" y="1650" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="970" y="1640" />
+              <mxPoint x="1120" y="1640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-138" value="Конец" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="1740" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FQ-c0hYM6GL1p2h-1yDK-139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FQ-c0hYM6GL1p2h-1yDK-133" target="FQ-c0hYM6GL1p2h-1yDK-138">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
