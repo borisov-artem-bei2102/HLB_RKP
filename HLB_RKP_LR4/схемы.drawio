@@ -1,0 +1,129 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
+  <diagram name="Страница — 1" id="R8XnnEVmH2Fg10V8Gqf3">
+    <mxGraphModel dx="956" dy="557" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="DE7Rg1CK66ikEsHbyaj7-1" target="DE7Rg1CK66ikEsHbyaj7-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-1" value="Начало" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="480" y="40" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="DE7Rg1CK66ikEsHbyaj7-3" target="DE7Rg1CK66ikEsHbyaj7-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-3" value="Получение времени записи" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="100" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-4" value="Запись логирование в конец файла в зависимости от переданного типа операции" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="160" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-7" value="Конец" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="480" y="270" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="DE7Rg1CK66ikEsHbyaj7-4" target="DE7Rg1CK66ikEsHbyaj7-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="DE7Rg1CK66ikEsHbyaj7-10" target="DE7Rg1CK66ikEsHbyaj7-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-10" value="Начало" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="800" y="40" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="DE7Rg1CK66ikEsHbyaj7-16" target="DE7Rg1CK66ikEsHbyaj7-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-16" value="Создание флага-результата" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="100" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="DE7Rg1CK66ikEsHbyaj7-17" target="DE7Rg1CK66ikEsHbyaj7-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-21" value="Да" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="DE7Rg1CK66ikEsHbyaj7-20">
+          <mxGeometry x="-0.8207" y="2" relative="1" as="geometry">
+            <mxPoint y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DE7Rg1CK66ikEsHbyaj7-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="839.9999999999998" y="339.9999999999999" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="940" y="210" />
+              <mxPoint x="940" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-25" value="Нет" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="DE7Rg1CK66ikEsHbyaj7-24">
+          <mxGeometry x="-0.898" relative="1" as="geometry">
+            <mxPoint x="-2" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-17" value="Нынешняя&lt;div&gt;роль ниже&lt;/div&gt;&lt;div&gt;необходимой&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="160" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="DE7Rg1CK66ikEsHbyaj7-19" target="DE7Rg1CK66ikEsHbyaj7-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-19" value="Изменение флага-результата на отрицательный" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="DE7Rg1CK66ikEsHbyaj7-22" target="DE7Rg1CK66ikEsHbyaj7-26">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-30" value="Да" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="DE7Rg1CK66ikEsHbyaj7-28">
+          <mxGeometry x="-0.5917" y="-1" relative="1" as="geometry">
+            <mxPoint x="19" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DE7Rg1CK66ikEsHbyaj7-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="839.9999999999998" y="610" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="940" y="400" />
+              <mxPoint x="940" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-35" value="Нет" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="DE7Rg1CK66ikEsHbyaj7-33">
+          <mxGeometry x="-0.8108" y="1" relative="1" as="geometry">
+            <mxPoint x="-23" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-22" value="Флаг&lt;div&gt;отрицательный&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="360" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="DE7Rg1CK66ikEsHbyaj7-26" target="DE7Rg1CK66ikEsHbyaj7-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-26" value="Отказано в доступе" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="450" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-27" value="Логирование записи об отказе в доступе" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-31" value="Конец" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="800" y="630" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DE7Rg1CK66ikEsHbyaj7-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="DE7Rg1CK66ikEsHbyaj7-27" target="DE7Rg1CK66ikEsHbyaj7-31">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="610" />
+              <mxPoint x="840" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
